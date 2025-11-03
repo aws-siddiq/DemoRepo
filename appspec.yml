@@ -15,7 +15,7 @@ hooks:
       runas: root
 
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
+    - location: install_dependencies.sh
       timeout: 300
       runas: root
 
@@ -27,3 +27,4 @@ hooks:
   ValidateService:
     - location: scripts/validate_service.sh
       timeout: 300
+
